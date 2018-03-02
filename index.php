@@ -38,11 +38,20 @@ echo json_encode($lista);*/
 
  echo $aluno;*/
 
- $aluno = new Usuario("aluno", "@alun0");
+ //Insert de usuário
+
+ /*$aluno = new Usuario("aluno", "@alun0");
 
  $aluno->insert();
 
- echo $aluno;
+ echo $aluno;*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(3);
+
+$usuario->update("professor", "Aasd@#ads");
+
+echo $usuario;
 
 ?>
