@@ -46,12 +46,23 @@ echo json_encode($lista);*/
 
  echo $aluno;*/
 
-$usuario = new Usuario();
+//Alterar um usuario
+
+ /*$usuario = new Usuario();
 
 $usuario->loadById(3);
 
 $usuario->update("professor", "Aasd@#ads");
 
-echo $usuario;
+echo $usuario;*/
+
+//Deletar um usuário
+
+$usuario = new Usuario();
+
+$usuario->loadById(3);
+
+$usuario->delete("professor", "Aasd@#ads");
+
 
 ?>
