@@ -16,10 +16,19 @@ echo json_encode($lista);*/
 
  echo json_encode($search);*/
 
- $usuario = new Usuario();
+ /*$usuario = new Usuario();
 
  $usuario->login("root","root");
 
- echo $usuario;
+ echo $usuario;*/
+
+ $aluno = new Usuario();
+
+ $aluno->setDeslogin("aluno");
+ $aluno->setDessenha("@aluno");
+
+ $aluno->insert();
+
+ echo $aluno;
 
 ?>
