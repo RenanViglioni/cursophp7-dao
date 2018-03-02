@@ -38,10 +38,7 @@ echo json_encode($lista);*/
 
  echo $aluno;*/
 
- $aluno = new Usuario();
-
- $aluno->setDeslogin("aluno");
- $aluno->setDessenha("aluno123");
+ $aluno = new Usuario("aluno", "@alun0");
 
  $aluno->insert();
 

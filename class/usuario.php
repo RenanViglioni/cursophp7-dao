@@ -115,6 +115,12 @@ class Usuario{
 
 	}
 
+	public function __construct($login = "", $password = ""){
+
+		$this->setDeslogin($login);
+		$this->setDessenha($password);
+	}
+
 	//Classe que mostra/converte o resultado dos atributos como string
 
 	public function __toString(){
